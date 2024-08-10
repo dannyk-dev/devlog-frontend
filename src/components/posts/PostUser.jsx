@@ -2,7 +2,7 @@ import React from "react";
 
 const PostUser = ({ user }) => {
   return (
-    <div className="mb-auto pt-4 flex items-center">
+    <div className=" pt-4 flex items-center">
       <h4 className="text-sm text-slate-300">{user.name}</h4>
       <div
         className="bg-slate-200 h-[4px] w-[4px] mx-2 "

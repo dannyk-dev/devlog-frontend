@@ -5,11 +5,11 @@ import Layout from "./Layout";
 const Home = () => {
   return (
     <Layout>
-      <div className="mx-auto w-10/12  justify-center flex flex-row align-baseline gap-4">
-        <div className="w-full mx-auto mt-8 flex justify-center space-x-12">
+      <div className="mx-auto w-11/12  justify-center flex flex-row align-baseline gap-4 ">
+        <div className="w-full mt-8 flex justify-between">
           <PostsList />
 
-          <div className="h-max max-w-[460px] sticky top-0 right-0  px-12 border-l-[1px] border-l-slate-600/65">
+          <div className="min-h-screen  border-l-[1.5px] border-l-slate-400/15 max-w-[460px]   px-12 ">
             <CategoryBox />
           </div>
         </div>

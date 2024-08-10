@@ -7,7 +7,7 @@ const CategoryBox = () => {
   const { data: categories } = useSWR("/categories", fetcher);
 
   return (
-    <>
+    <div className="sticky top-20 right-0 h-max w-full">
       <div className="py-4 ">
         <h1 className="text-lg text-slate-200 font-bold">Search by Category</h1>
         <p className="text-slate-400">
@@ -25,7 +25,7 @@ const CategoryBox = () => {
           </Button>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
