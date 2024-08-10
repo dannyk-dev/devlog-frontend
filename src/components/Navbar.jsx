@@ -16,7 +16,7 @@ const Navbar = () => {
   }, [user]);
 
   return (
-    <nav className="flex justify-between px-20 py-8 items-center bg-slate-800/95 z-50 top-0 left-0 right-0 shadow-sm shadow-white/15">
+    <nav className="flex justify-between px-20 py-4 items-center bg-slate-800 z-50 top-0 left-0 right-0 shadow-sm shadow-white/15">
       <h1 className="text-3xl text-slate-500 font-bold block mr-5">
         <Link to={"/"}>
           <span className="text-3xl text-amber-600">Dev</span>log

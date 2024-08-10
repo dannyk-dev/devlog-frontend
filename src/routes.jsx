@@ -3,6 +3,7 @@ import ErrorPage from "./components/ErrorPage";
 import Login from "./routes/Login";
 import Register from "./routes/Register";
 import Home from "./routes/Home";
+import PostArticle from "./routes/PostArticle";
 
 export const AppRoutes = [
   {
@@ -13,6 +14,11 @@ export const AppRoutes = [
       {
         path: "",
         element: <Home />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/posts/:id",
+        element: <PostArticle />,
         errorElement: <ErrorPage />,
       },
       {

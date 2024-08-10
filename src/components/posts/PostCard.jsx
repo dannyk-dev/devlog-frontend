@@ -2,13 +2,13 @@
 
 import { Link } from "react-router-dom";
 import PostUser from "./PostUser";
-import dayjs from "dayjs";
+import { formatPostDate } from "../../utils/dates";
 
 const PostCard = ({ post }) => {
-  const postDate = dayjs(post.created_at).format("MMM D, YYYY");
+  const postDate = formatPostDate(post?.created_at);
 
   return (
-    <Link to={`/post/${post.id}`} className="w-9/12">
+    <Link to={`/posts/${post.id}`} className="w-9/12">
       <article className="w-full  hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
         <div className="rounded-[10px] w-full bg-slate-800 p-4 !pt-0 sm:p-6 h-60 flex flex-col justify-around">
           <div className="flex flex-col space-y-4">
